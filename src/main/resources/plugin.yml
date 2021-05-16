@@ -1,0 +1,4 @@
+name: Racer
+version: ${project.version}
+main: xyz.lazertechbuilds.racer.Racer
+api-version: 1.16
