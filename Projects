@@ -1,0 +1,60 @@
+Commands and inventory items:
+
+1. Track
+    - Create Track Command (CreateTrackCommand)
+    - Join / Leave (Track name) (Make Leave Block) (JoinLeaveCommand)
+    - Start / Stop (Admin) (StartStopCommand)
+    - Join Team / Leave Team (Block)
+    - Cart Choice (Inventory)
+    - Add Starting gridPos
+    - Add Red Light Green Light
+
+Classes:
+
+1. Track
+    - maxPlayers
+    - minPlayers
+    - matchTime
+    - maxLaps
+    - karts
+    - startingGrid (Location object)
+    - lightPos
+    - checkPoints (with checkpoint count)
+
+    - spawnCarts()
+2. TrackType (Enum):
+    - PointToPoint (point A to B)
+    - Track
+    - Time trial (SinglePlayer)
+3. Checkpoint
+    - posA
+    - posB
+
+    - checkIfInside()
+
+4. Kart
+    - player
+    - boat
+    - checkPointNumber
+    - track
+
+Permissions:
+    - racer.admin (Admin commands)
+    - racer.admin.start
+    - racer.admin.stop
+    - racer.admin.addtrack
+    - racer.admin.addstartgridpos
+    - racer.join.raceName (Join race)
+
+
+Stuff:
+    - Admin wand for selecting stuff
+    - Player selects a kart and that creates the kart object and adds it to the track
+    - Create a scoreboard with position and countdown timer
+    - Start timer (i.e. 3 2 1 GO!)
+    - Change block based start count down
+
+
+Events:
+    - On leave boat (Prevent players from leaving the boat)
+    - On move (Check if kart passed through checkpoint)
