@@ -2,3 +2,54 @@ name: Racer
 version: ${project.version}
 main: xyz.lazertechbuilds.racer.Racer
 api-version: 1.16
+commands:
+  createtrack:
+    permission: racer.admin.createtrack
+    permission-message: You do not have permission to use this command.
+    usage: /createtrack [track name] [race type] [min player] [max players] [laps]
+    aliases:
+      - ct
+  listtracks:
+    permission: racer.list
+    aliases:
+      - lt
+  addlobbypos:
+    permission: racer.admin.addlobbypos
+    permission-message: You do not have permission to use this command.
+    usage: /addlobbypos [track name]
+    aliases:
+      - alp
+      - addlobbyposition
+  addgridpos:
+    permission: racer.admin.addgridpos
+    permission-message: You do not have permission to use this command.
+    usage: /addgridpos [track name]
+    aliases:
+      - agp
+  startrace:
+    permission: racer.admin.startrace
+    usage: "Usage: /startrace [track name]"
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - sr
+  cleargridpos:
+    permission: racer.admin.cleargridpos
+    aliases:
+      - cgp
+      - cleargridpositions
+    permission-message: You do not have permission to use this command.
+    usage: "Usage: /cleargridpos [track name]"
+  clearlobbypos:
+    permission: racer.admin.clearlobbypos
+    aliases:
+      - clp
+      - clearlobbypositions
+    usage: "Usage: /clearlobbypos [track name]"
+    permission-message: You do not have permission to use this command.
+  join:
+    permission: racer.joingame
+    usage: "Usage: /join [track name]"
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - j
+
